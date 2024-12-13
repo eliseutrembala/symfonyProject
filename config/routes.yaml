@@ -17,3 +17,29 @@ controllers:
     prefix: /{_locale}
     defaults:
         _locale: '%locale%'
+
+carros_index:
+  path: /carros
+  controller: App\Controller\ApiCarroController::index
+  methods: [GET]
+
+carros_store:
+  path: /carros
+  controller: App\Controller\ApiCarroController::store
+  methods: [POST]
+
+carros_show:
+  path: /carros/{id}
+  controller: App\Controller\ApiCarroController::show
+  methods: [GET]
+
+carros_update:
+  path: /carros/{id}
+  controller: App\Controller\ApiCarroController::update
+  methods: [PUT]
+
+carros_delete:
+  path: /carros/{id}
+  controller: App\Controller\ApiCarroController::delete
+  methods: [DELETE]
+

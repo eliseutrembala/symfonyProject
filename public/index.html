@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Carros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Gerenciador de Carros</h1>
+  </header>
+
+  <main>
+    <section id="carros-list">
+      <h2>Lista de Carros</h2>
+      <ul id="lista-carros"></ul>
+    </section>
+
+    <section id="adicionar-carro">
+      <h2>Adicionar Carro</h2>
+      <form id="form-carro">
+        <label for="marca">Marca:</label>
+        <select id="marca" name="marca" required>
+            <option value="" disabled selected>Selecione uma marca</option>
+            <option value="audi">Audi</option>
+            <option value="bmw">BMW</option>
+            <option value="chevrolet">Chevrolet</option>
+            <option value="fiat">Fiat</option>
+            <option value="ford">Ford</option>
+            <option value="honda">Honda</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="jeep">Jeep</option>
+            <option value="mercedes-benz">Mercedes-Benz</option>
+            <option value="nissan">Nissan</option>
+            <option value="peugeot">Peugeot</option>
+            <option value="renault">Renault</option>
+            <option value="toyota">Toyota</option>
+            <option value="volkswagen">Volkswagen</option>
+        </select>
+
+        <label for="modelo">Modelo:</label>
+        <input type="text" id="modelo" name="modelo" required>
+
+        <label for="ano">Ano:</label>
+        <input type="number" id="ano" name="ano" required>
+
+        <label for="cor">Cor:</label>
+        <select id="cor" name="cor" required>
+            <option value="" disabled selected>Selecione uma cor</option>
+            <option value="preto">Preto</option>
+            <option value="branco">Branco</option>
+            <option value="prata">Prata</option>
+            <option value="cinza">Cinza</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="azul">Azul</option>
+            <option value="verde">Verde</option>
+            <option value="amarelo">Amarelo</option>
+            <option value="laranja">Laranja</option>
+            <option value="roxo">Roxo</option>
+        </select>
+
+        <button type="submit">Adicionar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+
